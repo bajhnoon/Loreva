@@ -161,3 +161,18 @@ p{margin:0}
 .wa-float:hover{color:#fff;background:#187647}
 
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* Hero — new arrival */
+.hero-new{position:relative;display:block;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.55)}
+.hero-new img{width:100%;aspect-ratio:5/4;object-fit:cover;object-position:center 45%;border-radius:0;transition:transform .5s ease}
+.hero-new:hover img{transform:scale(1.03)}
+.new-tag{position:absolute;top:20px;inset-inline-start:20px;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 22px;border-radius:999px;background:var(--navy);color:var(--blush);font-family:var(--display);font-size:18px;font-weight:600;box-shadow:0 8px 20px -8px rgba(0,0,0,.45)}
+.new-tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blush)}
+@media (max-width:600px){.new-tag{top:14px;inset-inline-start:14px;font-size:16px;min-height:40px;padding:0 18px}}
+
+/* Delivery platforms on hero image (top-left corner) */
+.platforms{position:absolute;top:20px;inset-inline-end:20px;display:flex;align-items:center;gap:10px}
+.hero-new .platforms img{height:44px;width:auto;aspect-ratio:auto;object-fit:contain;transform:none;box-shadow:0 8px 18px -8px rgba(0,0,0,.45)}
+.hero-new .platforms .pf-hs{border-radius:12px}
+.hero-new .platforms .pf-cz{border-radius:4px}
+@media (max-width:600px){.platforms{top:14px;inset-inline-end:14px;gap:8px}.hero-new .platforms img{height:34px}}
